@@ -1,0 +1,206 @@
+extends header
+
+block content
+  .header
+    .header__logo-box
+      img.header__logo(src="assets/img/logo.jpg", alt="Logo",)
+    .header__text-box
+      h1.heading-primary.heading-primary--sub
+          |  welcome to
+      h1.heading-primary.heading-primary--main
+          | ngungu muguku foundation
+      a.btn.btn--green(href="#")
+        span Learn more
+  main
+    //- section.section-about
+    //-   .u-center-text.u-margin-bottom-big
+    //-     h2.heading-secondary
+    //-       | who are we
+  
+    //-   .row
+    //-     .col-1-of-3
+    //-       h3.heading-tertiary
+    //-         | Community
+    //-     .col-2-of-3
+    //-       p.paragraph
+    //-         | We have our roots in the community. Our leadership is drawn from the local population. This is one of our key strengths and affirms the right of 
+    //-         | people to make their own decisions about the issues that affect their lives. As a local organization we are in a uniquely credible situation to 
+    //-         | deliver local development services more effectively than outside organizations
+    //-       p.paragraph
+    //-         | It also means that we do not have an expensive administrative headquarters in a third country: our administration team here is very small and our 
+    //-         | overheads are minimal: and, this means that we can maximize direct use of funds in our projects. Our donors can be sure that their contributions 
+    //-         | reach their target.
+
+    //-   .row
+    //-     .col-1-0f-3
+    //-       h3.heading-tertiary
+    //-         | our focus
+    //-     .col-2-of-3
+    //-       p.paragraph
+    //-         | Excellence in Health Care Delivery, Education, Social Services and Community Development 
+      
+
+    //-   .row
+    //-     .col-1-of-3
+    //-       h3.heading-tertiary
+    //-         | our values
+    //-     .col-2-of-3
+    //-       ul
+    //-         li 
+    //-           | honesty
+    //-         li
+    //-           | responsibility
+    //-         li 
+    //-           | respect
+
+    //-   .row
+    //-     .col-1-of-2
+    //-       h3.heading-tertiary
+    //-         | our role
+
+    //-       ul
+    //-         li administration
+    //-         li professional leadership and support
+        
+    //-     .col-1-of-2
+    //-       h3.heading-tertiary
+    //-         | our roles include
+          
+    //-       p.paragraph
+    //-         | Development and empowerment of socially and economically 
+    //-         | marginalized individuals’ health care, education, and social 
+    //-         | service and community development as program areas
+
+
+        
+
+
+    //- section.section
+      
+
+    section.section-about
+      .u-center-text.u-margin-bottom-big
+        h2.heading-secondary
+          | who are we
+      .row
+        .story
+          .story__text
+            p.paragraph
+              |The Ngungu Muguku Foundation (NMF) is a nonprofit grant making institution dedicated 
+              |to helping groups and individuals. The NMF was founded in 2014, and registered with 
+              |certificate No. 48065 under section 10 of the societies act on 22nd April 2016. 
+              |It has subsequently played a major role in the transformation of in among others health, 
+              |education and livelihoods of both individuals and communities in Kenya. The foundation 
+              |is committed to working towards the development and empowerment of socially and economically 
+              |marginalized individuals (especially children, trauma victims, women and girls) in communities 
+              |living in the country with health care, education, social services and community development. 
+              |The NMF’s focus is to improve the socio-economic conditions of communities within the country.
+              |We have successfully overseen a computer for schools project in Muranga County. The chairman 
+              |of the foundation, Dr Enos Ngungu Muguku has practiced orthopaedic surgery for over 34 years
+              |and currently runs an orthopaedic medical clinic within Nakuru Town. In partnership with local
+              | hospitals the chairman of the foundation has offered trauma care services to diverse groups 
+              | of patients. The foundation intends to extend coverage of such services in a specialized trauma center.
+            a(href="/ourstory" class="btn-text")
+              |learn more &rarr;
+
+
+    section.section-profile
+      .u-center-text.u-margin-bottom-big
+        h2.heading-tertiary
+          | our values
+      .row
+        .col-1-of-4
+          .feature-box
+            .feature-box__icon 
+            h2.heading-tertiary.u-margin-bottom-small
+              | Honesty
+
+        
+        .col-1-of-4
+          .feature-box
+            .feature-box__icon
+            h2.heading-tertiary.u-margin-bottom-small
+              | responsibility
+        
+        .col-1-of-4
+          .feature-box
+            .feature-box__icon
+            h2.heading-tertiary.u-margin-bottom-small
+              | respect
+            
+        
+        .col-1-of-4
+          .feature-box
+            .feature-box__icon
+            h2.heading-tertiary.u-margin-bottom-small
+              | integrity
+      
+
+    section.section-directors
+      .u-center-text.u-margin-bottom-big
+        h2.heading-secondary
+            | our directors
+      
+      include directors.pug
+    
+
+    //- section.section-foundation
+    //-   h2.heading-primary
+    //-     | Our Goals
+    //-   .row
+    //-     .col-1-of-3
+    //-       .foundation-item
+    //-         .foundation-item__icon
+    //-           |
+    //-         h3.heading-tertiary
+    //-           | item title
+
+    
+    //- section.section-works
+    //-   h2.heading-primary
+    //-   | Recent Works
+    //-   .works-item
+    //-     h3.heading_secondary
+    //-       | Our Passion is to Bring change to Our Community,
+    //-       | Check out our Recent Works
+
+    //-   .works-gallery
+    //-     .works-gallery--item
+    
+
+    section.section-contact
+      .row
+        .contact
+          .contact__form
+            form(action="#" class="form")
+              .u-margin-bottom-medium
+                h2.heading-secondary
+                  | Contact us
+
+                //- .form__group
+                //-   input.form__input(type="text", name="user[firstName]", placeholder="first name")
+                //-   label.form__label(for="user[firstName]") First Name:
+                //- .form__group
+                //-   input.form__input(type="text", name="user[lastName]", placeholder="last name")
+                //-   label.form__label(for="user[lastName]") Last Name:
+
+                .form__group
+                  input.form__input(type="text", name="user[email]", placeholder="email")
+                  label.form__label.form__label(for="user[email]") Email:
+                .form__group
+                  input.form__input(type="text", name="title" placeholder="title")
+                  label.form__label(for="title") Title
+                
+                .form__group
+                  input.form__input(type="textarea", name="message", placeholder="message")
+                  label.form__label(for="message") Message
+                .form__group
+                  btn
+                    input.btn.btn--green(type="button", value="Send message")
+
+
+    include footer.pug
+    include popup.pug
+  
+
+            

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="main.css")
+    link(rel="stylesheet", href="css/icon-font.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900")
+    title= title
+  body
+
+    .navigation
+      input.navigation__checkbox(type="checkbox", id="navi-toggle")
+      label.navigation__button(for="navi-toggle")
+        span.navigation__icon
+          | &nbsp;
+
+      .navigation__background &nbsp;
+      nav.navigation__nav
+        ul.navigation__list
+          li.navigation__item
+            a.navigation__link(href="/")
+              span 01
+              span Home
+          li.navigation__item
+            a.navigation__link(href="/about")
+              span 02
+              span about
+          li.navigation__item
+            a.navigation__link(href="/ourstory")
+              span 03
+              span our story
+    block content
